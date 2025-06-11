@@ -1,0 +1,402 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Riski Bayu Setiawan - Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Animate fade-in-up */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 0.8s;
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Stagger animation delays */
+    .delay-100 {
+      animation-delay: 0.1s;
+    }
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+    .delay-300 {
+      animation-delay: 0.3s;
+    }
+    .delay-400 {
+      animation-delay: 0.4s;
+    }
+    .delay-500 {
+      animation-delay: 0.5s;
+    }
+    .delay-600 {
+      animation-delay: 0.6s;
+    }
+    .delay-700 {
+      animation-delay: 0.7s;
+    }
+    .delay-800 {
+      animation-delay: 0.8s;
+    }
+    .delay-900 {
+      animation-delay: 0.9s;
+    }
+  </style>
+ </head>
+ <body class="bg-gradient-to-b from-indigo-900 via-indigo-800 to-indigo-700 text-gray-100 min-h-screen flex flex-col">
+  <header class="container mx-auto px-6 py-6 flex justify-between items-center">
+   <h1 class="text-3xl font-bold tracking-wide fade-in-up delay-100">
+    Riski Bayu Setiawan
+   </h1>
+   <nav class="space-x-6 text-lg font-medium fade-in-up delay-200">
+    <a class="hover:text-indigo-300 transition" href="#about">
+     About
+    </a>
+    <a class="hover:text-indigo-300 transition" href="#skills">
+     Skills
+    </a>
+    <a class="hover:text-indigo-300 transition" href="#projects">
+     Projects
+    </a>
+    <a class="hover:text-indigo-300 transition" href="#contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <main class="flex-grow container mx-auto px-6 py-12">
+   <section class="flex flex-col-reverse md:flex-row items-center md:justify-between gap-10 md:gap-20" id="hero">
+    <div class="max-w-xl fade-in-up delay-300">
+     <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+      Hi, I'm
+      <span class="text-indigo-400">
+       Riski Bayu Setiawan
+      </span>
+     </h2>
+     <p class="text-lg md:text-xl text-indigo-200 mb-6">
+      A passionate
+      <span class="font-semibold text-indigo-300">
+       Web Developer
+      </span>
+      and
+      <span class="font-semibold text-indigo-300">
+       UI/UX Designer
+      </span>
+      crafting modern and user-friendly digital experiences.
+     </p>
+     <a class="inline-block bg-indigo-500 hover:bg-indigo-600 transition text-white font-semibold px-6 py-3 rounded-lg shadow-lg shadow-indigo-700/50 transform hover:scale-105" href="#contact">
+      Contact Me
+      <i class="fas fa-paper-plane ml-2">
+      </i>
+     </a>
+    </div>
+    <div class="w-full max-w-sm fade-in-up delay-400">
+     <img alt="3D model of a young male web developer with short black hair, wearing a casual dark blue shirt, rendered in a modern 3D style with soft lighting and subtle shadows" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/bb2ce6de-d1c6-48a7-7aab-a3d3e408fa3c.jpg" width="400"/>
+    </div>
+   </section>
+   <section class="mt-20 fade-in-up delay-500" id="about">
+    <h3 class="text-3xl font-bold mb-6 border-b-4 border-indigo-400 inline-block pb-1">
+     About Me
+    </h3>
+    <p class="max-w-3xl text-indigo-200 text-lg leading-relaxed">
+     I am a dedicated web developer and UI/UX designer with a strong passion for creating beautiful, functional, and accessible websites and applications. With expertise in modern web technologies and design principles, I strive to deliver seamless user experiences that help businesses grow and users engage effortlessly.
+    </p>
+   </section>
+   <section class="mt-20 fade-in-up delay-600" id="skills">
+    <h3 class="text-3xl font-bold mb-6 border-b-4 border-indigo-400 inline-block pb-1">
+     Skills
+    </h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-4xl">
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fab fa-html5 text-5xl text-orange-500 mb-4 animate-pulse" title="HTML5">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       HTML5
+      </h4>
+      <p class="text-indigo-300 text-center">
+       Semantic markup &amp; accessibility
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4 animate-pulse" title="CSS3">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       CSS3
+      </h4>
+      <p class="text-indigo-300 text-center">
+       Responsive &amp; modern styling
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fab fa-js-square text-5xl text-yellow-400 mb-4 animate-pulse" title="JavaScript">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       JavaScript
+      </h4>
+      <p class="text-indigo-300 text-center">
+       Interactive &amp; dynamic web apps
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fab fa-react text-5xl text-cyan-400 mb-4 animate-pulse" title="React">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       React
+      </h4>
+      <p class="text-indigo-300 text-center">
+       Component-based UI development
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fas fa-pencil-ruler text-5xl text-pink-400 mb-4 animate-pulse" title="UI/UX Design">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       UI/UX Design
+      </h4>
+      <p class="text-indigo-300 text-center">
+       User-centered design &amp; prototyping
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fab fa-git-alt text-5xl text-red-500 mb-4 animate-pulse" title="Git">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       Git
+      </h4>
+      <p class="text-indigo-300 text-center">
+       Version control &amp; collaboration
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fab fa-node-js text-5xl text-green-500 mb-4 animate-pulse" title="Node.js">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       Node.js
+      </h4>
+      <p class="text-indigo-300 text-center">
+       Backend &amp; API development
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fas fa-mobile-alt text-5xl text-indigo-400 mb-4 animate-pulse" title="Responsive Design">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       Responsive Design
+      </h4>
+      <p class="text-indigo-300 text-center">
+       Mobile-first &amp; adaptive layouts
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fas fa-server text-5xl text-gray-400 mb-4 animate-pulse" title="Server &amp; Cloud">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       Server &amp; Cloud
+      </h4>
+      <p class="text-indigo-300 text-center">
+       Cloud infrastructure &amp; deployment
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fas fa-database text-5xl text-yellow-500 mb-4 animate-pulse" title="Database">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       Databases
+      </h4>
+      <p class="text-indigo-300 text-center">
+       SQL &amp; NoSQL data management
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fas fa-cloud text-5xl text-blue-400 mb-4 animate-pulse" title="Cloud Computing">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       Cloud Computing
+      </h4>
+      <p class="text-indigo-300 text-center">
+       AWS, Azure &amp; Google Cloud basics
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 flex flex-col items-center shadow-lg hover:shadow-indigo-500 transition-shadow cursor-default">
+      <i class="fas fa-lock text-5xl text-red-400 mb-4 animate-pulse" title="Cybersecurity">
+      </i>
+      <h4 class="text-xl font-semibold mb-1">
+       Cybersecurity
+      </h4>
+      <p class="text-indigo-300 text-center">
+       Secure coding &amp; best practices
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mt-20 fade-in-up delay-700" id="projects">
+    <h3 class="text-3xl font-bold mb-6 border-b-4 border-indigo-400 inline-block pb-1">
+     Projects
+    </h3>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-7xl">
+     <article class="bg-indigo-800 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+      <img alt="Screenshot of Project 1: Modern e-commerce website homepage with product grid and clean UI in blue and white colors" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5dd3ebf9-c18b-4949-0394-bc10eec85dce.jpg" width="600"/>
+      <div class="p-6">
+       <h4 class="text-xl font-semibold mb-2">
+        Modern E-commerce Website
+       </h4>
+       <p class="text-indigo-300 mb-4">
+        Developed a responsive e-commerce platform with smooth animations, product filtering, and secure checkout.
+       </p>
+       <div class="flex space-x-4 text-indigo-400 text-lg">
+        <i class="fab fa-react" title="React">
+        </i>
+        <i class="fab fa-css3-alt" title="CSS3">
+        </i>
+        <i class="fab fa-node-js" title="Node.js">
+        </i>
+       </div>
+      </div>
+     </article>
+     <article class="bg-indigo-800 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+      <img alt="Screenshot of Project 2: Portfolio website UI/UX design with clean layout and pastel color scheme" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/fde93098-d388-4e6d-a6a0-833650e20b75.jpg" width="600"/>
+      <div class="p-6">
+       <h4 class="text-xl font-semibold mb-2">
+        Portfolio Website UI/UX Design
+       </h4>
+       <p class="text-indigo-300 mb-4">
+        Created a sleek and modern portfolio website design focusing on user experience and accessibility.
+       </p>
+       <div class="flex space-x-4 text-indigo-400 text-lg">
+        <i class="fas fa-pencil-ruler" title="UI/UX Design">
+        </i>
+        <i class="fab fa-html5" title="HTML5">
+        </i>
+        <i class="fab fa-css3-alt" title="CSS3">
+        </i>
+       </div>
+      </div>
+     </article>
+     <article class="bg-indigo-800 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+      <img alt="Screenshot of Project 3: Task management web app dashboard with task lists and progress bars in dark theme" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/410ad8e3-2073-478b-67c9-547fa540e2de.jpg" width="600"/>
+      <div class="p-6">
+       <h4 class="text-xl font-semibold mb-2">
+        Task Management App
+       </h4>
+       <p class="text-indigo-300 mb-4">
+        Built a full-stack task management application with real-time updates and drag-and-drop functionality.
+       </p>
+       <div class="flex space-x-4 text-indigo-400 text-lg">
+        <i class="fab fa-js-square" title="JavaScript">
+        </i>
+        <i class="fab fa-react" title="React">
+        </i>
+        <i class="fab fa-node-js" title="Node.js">
+        </i>
+       </div>
+      </div>
+     </article>
+     <article class="bg-indigo-800 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+      <img alt="Screenshot of Project 4: Blog platform homepage with featured articles and clean typography" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3e1317e3-dd0d-46a8-4739-157e91ff8185.jpg" width="600"/>
+      <div class="p-6">
+       <h4 class="text-xl font-semibold mb-2">
+        Blog Platform
+       </h4>
+       <p class="text-indigo-300 mb-4">
+        Developed a customizable blog platform with markdown support, SEO optimization, and user authentication.
+       </p>
+       <div class="flex space-x-4 text-indigo-400 text-lg">
+        <i class="fab fa-html5" title="HTML5">
+        </i>
+        <i class="fab fa-css3-alt" title="CSS3">
+        </i>
+        <i class="fab fa-js-square" title="JavaScript">
+        </i>
+       </div>
+      </div>
+     </article>
+     <article class="bg-indigo-800 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+      <img alt="Screenshot of Project 5: Weather dashboard app showing current weather and forecast with icons and charts" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/02822fc8-2532-4f3b-4378-8992ca247d87.jpg" width="600"/>
+      <div class="p-6">
+       <h4 class="text-xl font-semibold mb-2">
+        Weather Dashboard
+       </h4>
+       <p class="text-indigo-300 mb-4">
+        Created a weather dashboard app with API integration, dynamic charts, and responsive design.
+       </p>
+       <div class="flex space-x-4 text-indigo-400 text-lg">
+        <i class="fab fa-js-square" title="JavaScript">
+        </i>
+        <i class="fab fa-react" title="React">
+        </i>
+       </div>
+      </div>
+     </article>
+     <article class="bg-indigo-800 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 cursor-pointer">
+      <img alt="Screenshot of Project 6: Chat application interface with user list and message bubbles in dark mode" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e689dba4-09e5-4a3c-6df6-fb2cf409f93a.jpg" width="600"/>
+      <div class="p-6">
+       <h4 class="text-xl font-semibold mb-2">
+        Chat Application
+       </h4>
+       <p class="text-indigo-300 mb-4">
+        Developed a real-time chat application with WebSocket support, user presence, and emoji reactions.
+       </p>
+       <div class="flex space-x-4 text-indigo-400 text-lg">
+        <i class="fab fa-node-js" title="Node.js">
+        </i>
+        <i class="fab fa-js-square" title="JavaScript">
+        </i>
+        <i class="fab fa-react" title="React">
+        </i>
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section class="mt-20 fade-in-up delay-800 max-w-3xl mx-auto" id="contact">
+    <h3 class="text-3xl font-bold mb-6 border-b-4 border-indigo-400 inline-block pb-1 text-center">
+     Contact Me
+    </h3>
+    <form action="mailto:riski.bayu@example.com" class="bg-indigo-800 rounded-xl p-8 shadow-lg" enctype="text/plain" method="POST">
+     <div class="mb-6">
+      <label class="block mb-2 font-semibold text-indigo-300" for="name">
+       Name
+      </label>
+      <input class="w-full rounded-md border border-indigo-600 bg-indigo-900 text-indigo-100 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="name" name="Name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2 font-semibold text-indigo-300" for="email">
+       Email
+      </label>
+      <input class="w-full rounded-md border border-indigo-600 bg-indigo-900 text-indigo-100 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="email" name="Email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2 font-semibold text-indigo-300" for="message">
+       Message
+      </label>
+      <textarea class="w-full rounded-md border border-indigo-600 bg-indigo-900 text-indigo-100 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400" id="message" name="Message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <button class="w-full bg-indigo-500 hover:bg-indigo-600 transition text-white font-semibold px-6 py-3 rounded-lg shadow-lg shadow-indigo-700/50 transform hover:scale-105" type="submit">
+      Send Message
+      <i class="fas fa-paper-plane ml-2">
+      </i>
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer class="bg-indigo-900 text-indigo-300 py-6 mt-20">
+   <div class="container mx-auto px-6 text-center text-sm select-none">
+    © 2024 Riski Bayu Setiawan. All rights reserved.
+   </div>
+  </footer>
+ </body>
+</html>
