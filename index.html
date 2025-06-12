@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: #2bd974;
+      background: linear-gradient(135deg, #2bd974, #00b4ff);
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       flex-direction: column;
@@ -16,6 +16,7 @@
       justify-content: center;
       height: 100vh;
       text-align: center;
+      overflow: hidden;
     }
 
     img {
@@ -26,33 +27,88 @@
 
     h1 {
       font-size: 2em;
-      color: #333;
+      color: #fff;
       margin-bottom: 30px;
     }
 
-    a.button {
+    .button {
       padding: 12px 25px;
-      background-color: #0051ff;
+      background-color: #ff6f00;
       color: #fff;
       text-decoration: none;
       font-size: 16px;
       border-radius: 8px;
       transition: background-color 0.3s ease;
+      cursor: pointer;
     }
 
-    a.button:hover {
-      background-color: #0056b3;
+    .button:hover {
+      background-color: #e65c00;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      animation: fadeIn 0.5s ease-in-out;
+      z-index: 10;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translate(-50%, -60%); }
+      to   { opacity: 1; transform: translate(-50%, -50%); }
+    }
+
+    marquee {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+
+    .emoji {
+      font-size: 48px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Ganti URL gambar dengan yang kamu mau -->
-  <img src="https://via.placeholder.com/300x200?text=Loading..." alt="Gambar Menunggu">
+  <marquee>🌈 Selamat datang! Sabar yaa... ini cuma sebentar kok 😄</marquee>
+
+  <div class="emoji">🐢💤</div>
+
+<img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="Pesawat Terbang Lucu" style="max-width: 300px; height: auto; margin-bottom: 20px;">
   
   <h1>Nungguin yaaaa....</h1>
   
-  <a href="bayu.html" class="button">Lanjut aja dulu</a>
+  <a class="button" onclick="showPopup()">Mau lanjut ga nii?</a>
+
+  <div class="popup" id="popupBox">
+    <p>🎉 Bole deh lanjut bentar 😎</p>
+  </div>
+
+  <script>
+    function showPopup() {
+      const popup = document.getElementById("popupBox");
+      popup.style.display = "block";
+
+      // Setelah 2 detik, arahkan ke bayu.html
+      setTimeout(function() {
+        window.location.href = "bayu.html";
+      }, 2000);
+    }
+  </script>
 
 </body>
 </html>
